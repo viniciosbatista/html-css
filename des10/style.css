@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:'idroid';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --cor0:#ebe5c5;
+   --cor1:#83e1ad;
+   --cor2:#3ddc84;
+   --cor3:#2fa866;
+   --cor4:#1a5c37;
+   --cor5:#063d1e;
+
+   --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+
+   --fonte-destaque:'Bebas Neue', cursive;
+
+   --fonte-idroid:'idroid', cursive;
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+/*header*//*pronto*/
+header{
+    background-image: linear-gradient(to bottom,var(--cor3),var(--cor5));
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px; 
+}
+/*pronto*/
+header>h1{
+    color: #ffffff;
+    padding: 0px 0px 20px 0px;
+    font: 500 3em var(--fonte-destaque);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.555);
+}
+/*pronto*/
+header>p{
+    margin: auto;
+    color:#ffffff;
+    max-width: 665px;
+    padding: 0px 10px 60px 10px;
+    font:1.2em var(--fonte-padrao);
+    text-shadow: 1px 1px 1px black;
+}
+/*pronto*/
+nav{
+    text-align: start;
+    padding-left: 10px;
+    
+}
+/*pronto*/
+header nav>a{
+    font-weight: bolder;
+    font-family:var(--fonte-padrao);
+    text-decoration: none;
+    color:var(--cor1);
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+/*pronto*/
+header nav>a:hover{
+    background-color:var(--cor3) ;
+    color: var(--cor5);
+}
+/*main*//*pronto*/
+main{
+    background-color: #ffffff;
+    max-width: 1040px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    line-height: 2em;
+    font-family:var(--fonte-padrao);
+    text-align: justify;
+    
+}
+/*pronto*/
+main article>h2{
+   font-family:var(--fonte-idroid) ;
+    font-weight: 500;
+    font-size:1.8em;
+    color:var(--cor5);
+    padding: 20px;
+}
+main article>p{
+    text-indent: 30px;
+    padding: 0px 20px 0px 20px ;
+}
+/*pronto*/
+strong{
+    color:var(--cor4);
+}
+/*pronto*/
+ main article>h3{
+ background-image: linear-gradient(to right,var(--cor1), rgba(255, 255, 255, 0));
+ font: 500 1.3em var(--fonte-idroid);
+ color:var(--cor4);
+ padding-left: 10px;
+ margin: 20px 0px 20px 20px;
+}
+/*pronto*/
+article p>a{
+    text-decoration: none;
+    background-color:var(--cor1);
+    color:var(--cor5);
+    font-weight: bolder;
+    padding: 2px 5px 2px 5px;
+}
+/*pronto*/
+article p>a::after{
+    content: '🔗';
+}
+/*pronto*/
+article p>a:hover{
+    color:var(--cor4);
+    text-decoration: underline;
+}
+/*img*//*pronto*/
+.imag{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+/*pronto*/
+img{
+    display: block;
+    margin: auto; 
+}
+/*video*//*pronto*/
+div{
+    background-color:var(--cor5);
+    position: relative;
+    padding: 20px;
+    padding-bottom: 57%;
+    padding-top: 0%;
+}
+/*pronto*/
+iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+}
+/*aside tabela*//*pronto*/
+aside{
+    background-color:var(--cor1);
+    margin: 30px 20px 20px 20px;
+    border-radius: 10px;
+    text-align: justify;
+
+}
+/*pronto*/
+aside>h3{
+    color: #ffffff;
+    background-color:var(--cor4);
+    padding: 5px 0px 5px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+/*pronto*/
+aside>p{
+    text-indent: 30px;
+    padding: 10px 10px 10px 10px;
+    font-family:var(--fonte-padrao);
+}
+/*pronto*/
+ul{
+    columns: 2;
+    padding-left: 10px;
+    list-style: none;
+    
+}
+/*pronto*/
+li::before{
+    content:'✔ ';
+}
+/*pronto*/
+.fim{
+    padding-bottom: 20px;
+}
+/*pronto*/
+aside p>a{
+    text-decoration: none;
+    color:var(--cor5);
+    font-weight: bolder;
+}
+/*pronto*/
+aside p>a:hover{
+    color:var(--cor4);
+    text-decoration: underline;
+}
+/*pronto*/
+aside p>a::after{
+    content: '🔗';
+}
+/*p final*//*pronto*/
+.p{
+    text-align: justify;
+    text-indent: 30px;
+    padding: 0px 20px 30px 20px ;
+}
+/*footer*//*pronto*/
+footer{
+    color:#ffffff ;
+    background-color:var(--cor5);
+    padding: 3px;
+    text-align: center;
+    font-size: .8em;
+    margin-top: 30px;
+    font-family:var(--fonte-padrao);
+}
+/*pronto*/
+footer p>a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+
+}
+/*pronto*/
+footer p>a:hover{
+    text-decoration: underline;
+    color:var(--cor1);
+}
