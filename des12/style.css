@@ -4,3 +4,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --cor1:#000000;
+    --cor2:#ffff;
+    --cor3:#021101;
+    --cor4:#3E473C;
+
+    --fonte-header:'Passion One',cursive;
+    --font-corpo:'Sriracha', cursive;
+    --fonte-paragrafo:'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    text-align: center;
+    
+}
+header>h1{
+    font-family: var(--fonte-header);
+}
