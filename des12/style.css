@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 
 :root{
     --cor1:#000000;
@@ -12,7 +14,7 @@
     --cor3:#021101;
     --cor4:#3E473C;
 
-    --fonte-header:'Passion One',cursive;
+    --fonte-header:'passion One', cursive;
     --font-corpo:'Sriracha', cursive;
     --fonte-paragrafo:'Times New Roman', Times, serif;
 }
@@ -24,5 +26,11 @@ header{
     
 }
 header>h1{
-    font-family: var(--fonte-header);
+    font-family:var(--fonte-header);
+    font-variant: small-caps;
+    padding-top: 40px;
+    font-size: 3em;
+
+
+
 }
