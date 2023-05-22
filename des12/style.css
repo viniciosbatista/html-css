@@ -51,17 +51,16 @@ header p>a:hover{
 /*section*//*pronto*/
 /*pronto*/
 section>p{
-    font-family: var(--fonte-conteudo);
-    font-size: 3.5vw;
+    font: 3.5vw var(--fonte-conteudo);
     padding-left: 30px;
     margin-bottom: 30px;
+    
 }
 /*pronto*/
 #img1{
     background: var(--cor1) url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
-    margin-top:50px;
-    margin-bottom: 50px;
+    margin: 50px 0px;
 }
 /*pronto*/
 #img1>p{
@@ -74,15 +73,9 @@ section>p{
 }
 /*pronto*/
 #img2{
-    background-image: url(imagens/background002.jpg);
-    background-position:left center;
-    background-repeat: no-repeat;
+    background: var(--cor1) url(imagens/background002.jpg) left center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
-    background-color:var(--cor1);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
+    margin:50px 0px;
 }
 /*pronto*/
 #img2>p{
