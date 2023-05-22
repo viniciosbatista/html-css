@@ -1,6 +1,118 @@
+@charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1:rgb(0, 0, 0);
+    --cor2:rgb(255, 255, 255);
+    --cor3:#01120174;
+    --cor4:#3e423997;
+
+    --fonte-header:'passion one',cursive;
+    --fonte-conteudo:Sriracha,cursive;
+    --fonte-a:verdana,cursive;
+}
+
+/*header*//*pronto*/
+header{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    text-align: center;
+    margin-bottom: 40px;
+}
+/*pronto*/
+header>h1{
+    font: bolder 10vw  var(--fonte-header);
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+/*pronto*/
+header>p{
+    font-family:var(--fonte-a);
+    padding-bottom: 50px;
+}
+/*pronto*/
+header p>a{
+    color: var(--cor2);
+    font-weight:bolder;
+    text-decoration: none;
+}
+/*pronto*/
+header p>a:hover{
+    text-decoration: underline;
+}
+/*section*//*pronto*/
+/*pronto*/
+section>p{
+    font-family: var(--fonte-conteudo);
+    font-size: 3.5vw;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+/*pronto*/
+#img1{
+    background: var(--cor1) url(imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+/*pronto*/
+#img1>p{
+    color: var(--cor2);
+    background-color: var(--cor3);
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 50px 30px;
+
+}
+/*pronto*/
+#img2{
+    background-image: url(imagens/background002.jpg);
+    background-position:left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:var(--cor1);
+    margin-top: 50px;
+    margin-bottom: 50px;
     
+}
+/*pronto*/
+#img2>p{
+    color: var(--cor2);
+    background-color: var(--cor4);
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 50px 30px;
+}
+/*footer*//*pronto*/
+/*pronto*/
+footer{
+    color: var(--cor2);
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-a);
+    margin-top: 50px;
+}
+/*pronto*/
+footer p>a{
+    color: var(--cor2);
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+/*pronto*/
+footer p>a:hover{
+    text-decoration: underline;
+}
 
 
 
