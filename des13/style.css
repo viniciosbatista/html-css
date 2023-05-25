@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Helvetica, sans-serif;
+    
 }
 :root{
     --cor1:#B0E0E6;
@@ -11,37 +13,29 @@
 /*pronto*/
 p{
     text-align: center;
+    font-weight: bolder;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 /*pronto*/
 table{
+    border-collapse:collapse ;
     background-color: var(--cor2);
-    border-collapse: collapse;
     margin: auto;
-    
 }
 /*pronto*/
-th{
+thead{
+    font-weight: bolder;
     background-color: var(--cor1);
-    border: 1px solid black;
-    padding: 15px 10px;
-    
+    text-align: center;
+}
+/*pronto*/
+thead tr>td{
+    padding: 10px;
 }
 /*pronto*/
 td{
     border: 1px solid black;
     
-    
-    
-}
-/*pronto*/
-td.center{
-    text-align: center;
-}
-img{
-    padding: 5px 0px 0px 10px;
 }
 /*pronto*/
 a{
@@ -50,4 +44,21 @@ a{
 /*pronto*/
 a:hover{
     text-decoration: underline;
+}
+/*pronto*/
+.center{
+    text-align: center;
+    padding: 10px;
+}
+/*pronto*/
+.bolder{
+    font-weight: bolder;
+    text-align:center;
+    vertical-align: middle;
+    padding: 10px;
+}
+/*pronto*/
+tfoot{
+    background-color: var(--cor1);
+    
 }
