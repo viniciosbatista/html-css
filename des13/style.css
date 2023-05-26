@@ -11,31 +11,39 @@
     --cor2:#FFF8DC;
 }
 /*pronto*/
-p{
-    text-align: center;
-    font-weight: bolder;
+caption{
     padding: 10px;
+    font-weight: bolder;
+    font-size: 2em;
 }
 /*pronto*/
 table{
     border-collapse:collapse ;
-    background-color: var(--cor2);
     margin: auto;
+    font-size: 2vh;
+    max-width: 550px;
 }
 /*pronto*/
-thead{
-    font-weight: bolder;
-    background-color: var(--cor1);
+th{
     text-align: center;
 }
 /*pronto*/
-thead tr>td{
-    padding: 10px;
+thead{
+    background-color: var(--cor1);
 }
 /*pronto*/
-td{
-    border: 1px solid black;
+tbody{
+    background-color: var(--cor2);
+}
+/*pronto*/
+.center{
+    text-align: center;
     
+}
+/*pronto*/
+td,th{
+    border:  1px solid black;
+    padding: 10px;
 }
 /*pronto*/
 a{
@@ -46,19 +54,6 @@ a:hover{
     text-decoration: underline;
 }
 /*pronto*/
-.center{
-    text-align: center;
-    padding: 10px;
-}
-/*pronto*/
-.bolder{
-    font-weight: bolder;
-    text-align:center;
-    vertical-align: middle;
-    padding: 10px;
-}
-/*pronto*/
 tfoot{
     background-color: var(--cor1);
-    
 }
