@@ -7,14 +7,25 @@
         h1{
             text-align: center;
         }
+        iframe{
+            width: 100vw;
+            height: 400px;
+
+        }
     </style>
     <title>iframe</title>
 </head>
 <body>
     <h1>ifame</h1>
-    <iframe src="/des10/des10.html" frameborder="0"  width="600" height="500"></iframe>
-    <iframe src="/des12/des.html" frameborder="0" width="600" height="500"></iframe>
-    <br>
-    <iframe src="/des13/des13.html" frameborder="0" width="600" height="500"></iframe>
+    <ul>
+        <li><a href="/des12/des.html" target="frame">link 1</a></li>
+        <li><a href="/des11/des11.html" target="frame">link 2</a></li>
+        <li><a href="/des10/des10.html" target="frame">link 3</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus magni atque eius voluptatum perferendis rerum rem totam omnis officia mollitia neque, cupiditate recusandae quo itaque officiis quisquam ducimus pariatur.</p>
+
+    <iframe srcdoc="<h1> escolha um dos links acima  </h1>" name="frame" frameborder="0"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla illo optio, ducimus tempora debitis blanditiis unde temporibus veritatis molestias aliquam modi. Quae dignissimos consectetur saepe fugiat, quam ut quisquam!</p>
 </body>
 </html>
