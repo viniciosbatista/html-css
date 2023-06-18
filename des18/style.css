@@ -1,0 +1,71 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*pronto*/
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+/*pronto*/
+body{
+    position: relative;
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*pronto*/
+#telefone{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 211px;
+    height: 402px;
+    transform: translate(-50%,-50%);
+    background-image: url(imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/*pronto*/
+iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 170px;
+    height: 301px;
+    border: 0px;
+    background-image: url(imagens/tela-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*pronto*/
+ul{
+    position: absolute;
+    left: 90%;
+    margin-top: 10px;
+}
+/*pronto*/
+li{
+    padding-top: 10px;
+    list-style: none;
+}
+/*pronto*/
+a>img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+/*pronto*/
+a img:hover{
+    border-radius: 50%;
+    border: 2px solid white;
+}
