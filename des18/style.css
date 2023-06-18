@@ -39,12 +39,15 @@ iframe{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 170px;
-    height: 301px;
+    width: 173px;
+    height: 306px;
     border: 0px;
     background-image: url(imagens/tela-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border: 0px;
+    
+    
 }
 /*pronto*/
 ul{
@@ -68,4 +71,21 @@ a>img{
 a img:hover{
     border-radius: 50%;
     border: 2px solid white;
+}
+.inde{
+    width: 100vw;
+    
+   
+}
+.inde-a{
+    background-color: red;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    
+
+}
+::-webkit-scrollbar{
+    width: 0;
 }
