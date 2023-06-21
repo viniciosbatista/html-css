@@ -13,12 +13,10 @@ body,html{
 /*pronto*/
 body{
     position: relative;
-    background-image: url(imagens/fundo-madeira.jpg);
-    background-color: black;
-    background-repeat: no-repeat;
+    background: black url(imagens/fundo-madeira.jpg) center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+   
+   
 }
 /*pronto*/
 #telefone{
@@ -28,10 +26,8 @@ body{
     width: 211px;
     height: 402px;
     transform: translate(-50%,-50%);
-    background-image: url(imagens/frame-iphone.png);
-    background-repeat: no-repeat;
+    background: url(imagens/frame-iphone.png) center no-repeat fixed;
     background-size: contain;
-    background-position: center;
 }
 /*pronto*/
 iframe{
@@ -39,13 +35,12 @@ iframe{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 173px;
-    height: 306px;
+    width: 170px;
+    height: 301px;
     border: 0px;
-    background-image: url(imagens/tela-home.jpg);
-    background-repeat: no-repeat;
+    background: black url(imagens/tela-home.jpg)  center no-repeat;
     background-size: cover;
-    border: 0px;
+    
     
     
 }
@@ -75,8 +70,7 @@ a img:hover{
 /*pronto*/
 .inde{
     width: 100vw;
-    
-   
+    display: block;
 }
 /*pronto*/
 .inde-a{
@@ -92,8 +86,10 @@ a img:hover{
 /*pronto*/
 ::-webkit-scrollbar{
     width: 0;
+    height: 0;
 }
 /*pronto*/
 .inde-a:hover{
     text-decoration: underline;
+    
 }
