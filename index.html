@@ -2,77 +2,76 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <style>
-        body{
-            background-color:#F0F2F5;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body>p{
-            color: blue;
-            font-weight: bolder;
-            font-size: 3em;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 10px;
-        }
-        section{
-            background-color: white;
-            width: 400px;
-            height: 370px;
-            display: block;
-            margin: auto;
-            border-radius: 10px;
-        }
-        #unico{
-            padding-top: 20px;
-        }
-        input{
-            margin: 10px;
-            padding: 10px;
-            width: 350px;
-            border-radius: 5px;
-        }
-        #blue{
-            background-color: #166FE5;
-            color:white;
-            font-weight: bolder;
-            font-size: 1.5em;
-        }
-        a{
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        #th::after{
-            content:"_______________" ;
-        }
-        #th::before{
-            content:"________________";
-        }
-        button{
-            background-color: #36A420;
-            color:white ;
-            font-size: 1.5em;
-            border-radius: 5px;
-            padding: 5px;
-        }
-    </style>
-    <title>facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
 </head>
 <body>
-    <p>facebook</p>
-    <section>
-        <form method="post">
-            <p id="unico">Entrar no Facebook</p>
-            <input type="text" name="email" id="email" placeholder="Email ou telefone"> <br>
-            <input type="password" name="senha" id="senha" placeholder="Senha"> <br>
-            <input id="blue" type="submit" value="Entrar"> <br>
-            <a href="#">esqueceu a conta?</a>
-            <p id="th">ou</p>
-            <button>criar nova conta</button>
-        </form>
-    </section>
+    <h1>teste de formulario</h1>
+    <form autocomplete="on" method="post">
+        <fieldset>
+            <legend>dado pessoais</legend>
+            <p>
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome" required autocomplete="name" placeholder="nome" value="maria">
+            </p>
+            <p>
+                <label for="media">media</label>
+                <input type="number" name="media" id="media" required min="0" max="10" placeholder=" 0 a 10" step="0.1" value="5">
+            </p>
+            <p>
+                <label for="mes">periodo letivo</label>
+                <input type="month" name="mes" id="mes" required value="1999-05" >
+            </p>
+            <p>
+                <label for="dia">dia da prova</label>
+                <input type="date" name="dia" id="dia" required value="1999-05-09">
+            </p>
+            <p>
+                <label for="hora">hora da prova</label>
+                <input type="time" name="hora" id="hora" required value="00:00">
+            </p>
+            <p>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" required placeholder="email">
+            </p>
+            <p>
+                <label for="telefone">telefone</label>
+                <input type="tel" name="telefone" id="telefone" required placeholder="numero de telefone">
+            </p>
+            <p>
+                <label for="cor">cor</label>
+                <input type="color" name="cor" id="cor" required>
+            </p>
+            <p>
+                <label for="nivel">nivel de satisfaçao</label>
+                <input type="range" name="nivel" id="nivel" min="0" max="10" value="5">
+            </p>
+            <p>
+                <label for="foto">foto</label>
+                <input type="file" name="foto" id="foto">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>esportes</legend>
+            <p>
+                <input type="checkbox" name="futebol" id="futebol"><label for="futebol">futebol</label>
+                <input type="checkbox" name="futebol" id="muay thai" checked><label for="muay thai">muay thai</label>
+                
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="mas" checked>
+                <label for="mas">masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">feminino</label>
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
