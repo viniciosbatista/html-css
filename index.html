@@ -72,6 +72,41 @@
                 <label for="fem">feminino</label>
             </p>
         </fieldset>
+        <fieldset>
+                <legend>cidades</legend>
+                <p>
+                    <label for="estados">estados</label>
+                    <select name="estados" id="estados">
+                        <option value="" selected>--escolha--</option>
+                        <optgroup label="regiao sudeste">
+                            <option value="mg">minas gerais</option>
+                            <option value="rj">rio de janeiro</option>
+                            <option value="sp">sao paulo</option>
+                        </optgroup>
+                        <optgroup label="regiao nordeste">
+                            <option value="ma">maranhao</option>
+                            <option value="pe">pernanbuco</option>
+                            <option value="rn">rio grande do morte</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">profisao</label>
+                    <input type="text" name="prof" id="iprof" list="istprof">
+                    <datalist id="istprof">
+                        <option>administrador</option>
+                        <option>programador</option>
+                        <option>professor</option>
+                        <option>contabilista</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="msg">mensagen:</label> <br>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                </p>
+        </fieldset>
+       
+        
     </form>
 </body>
 </html>
